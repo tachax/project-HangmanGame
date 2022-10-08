@@ -14,8 +14,8 @@ var nome2;
 var erro = 0;
 var terminou = false;
 
-alert("Bem-vindo ao Jogo da Forca \nNesse jogo você tentará acertar qual dos personagens da DC comics foi sorteado! \nSerá que você consegue?");
-alert("Prepare o cérebro, a partida começa agora!");
+alert("Welcome to the Hangman Game \nIn this game you'll try to guess which DC Comics character was drawn! \nCan you do it?");
+alert("Prepare your brain, the game starts now!");
 
 //escolhido com ?
 for (let i = 0; i < dcEscolhido.length; i++) {
@@ -36,7 +36,7 @@ while (terminou===false) {
         //confere se o jogo terminou nas vitórias
         if (palavraSecreta == dcEscolhido) {
             terminou = true;
-            alert("YOU ARE A WINNER\n\nVocê acertou o personagem e ganhou o jogo!")
+            alert("YOU ARE A WINNER\n\nYou got the character right and won the game!")
             break;
         }
         
@@ -50,7 +50,7 @@ while (terminou===false) {
 
 //sempre que acerta
 function tentativaCerta() {
-    tentativa = prompt(`O personagem secreto tem ${dcEscolhido.length} letras: \n\n${palavraSecreta} \n\n Digite uma letra: `);
+    tentativa = prompt(`The secret character has ${dcEscolhido.length} letters: \n\n${palavraSecreta} \n\n Enter a letter: `);
     letraCerta = false
 
     //conferir se o palpite foi repetido
@@ -86,23 +86,23 @@ function tentativaErrada() {
     //vê quantos erros tem pra formar o boneco
     switch (erro) {
         case 1:
-            alert("Tentativa errada! Uma parte do boneco apareceu.\n\no")
+            alert("Wrong attempt! A part of the dummy appeared.\n\no")
             break;
         case 2:
-            alert("Tentativa errada! Uma parte do boneco apareceu.\n\no\n/")
+            alert("Wrong attempt! A part of the dummy appeared.\n\no\n/")
             break;
         case 3:
-            alert("Tentativa errada! Uma parte do boneco apareceu.\n\no\n/|")
+            alert("Wrong attempt! A part of the dummy appeared.\n\no\n/|")
             break;
         case 4:
-            alert("Tentativa errada! Uma parte do boneco apareceu.\n\no\n/|\\\n")
+            alert("Wrong attempt! A part of the dummy appeared.\n\no\n/|\\\n")
             break;
         case 5:
-            alert("Tentativa errada! Uma parte do boneco apareceu.\n\no\n/|\\\n/")
+            alert("Wrong attempt! A part of the dummy appeared.\n\no\n/|\\\n/")
             break;
         case 6:
-            alert("Tentativa errada! Uma parte do boneco apareceu.\n\no\n/|\\\n/ \\")
-            alert("GAME OVER\n\nVocê não conseguiu acertar o personagem :(")
+            alert("Wrong attempt! A part of the dummy appeared.\n\no\n/|\\\n/ \\")
+            alert("GAME OVER\n\nYou couldn't get the character right :(")
             terminou = true
             break;
         default:
