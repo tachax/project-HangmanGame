@@ -1,5 +1,5 @@
 # projeto-JogoForca
-Hangman game project for browser pop-ups. Done with JavaScript.
+Hangman game project for browser pop-ups. Done with JavaScript. Code made in Portuguese, but user interfaces updated to English.
 
 Can you guess which DC Comics character was drawn?
 
