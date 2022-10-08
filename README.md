@@ -3,6 +3,8 @@ Hangman game project for browser pop-ups. Done with JavaScript. Code made in Por
 
 Can you guess which DC Comics character was drawn?
 
+<a href="https://hangmanpopup.netlify.app/" target="_blank">Link to play</a>
+
 Interface Images:
 
 ![hangman1](https://user-images.githubusercontent.com/98829238/194716829-13a6f0ba-b935-4d9e-9cc4-0552b8b1d877.png)
